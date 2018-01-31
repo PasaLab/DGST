@@ -1,8 +1,12 @@
-#DGST
+# DGST
 
-DGST(**D**istributed **G**eneralized **S**uffix **T**ree) is an efficient and scalable generalized suffix tree construction algorithm on distributed data-Parallel platforms. DGST supports indexing all suffixes for a variety of string, ranging from a single long string to multiple string of varied lengths. In addition, DGST is built on the widely-used distributed data-parallel computing Apache Spark.  
+DGST (**D**istributed **G**eneralized **S**uffix **T**ree) is an efficient and scalable generalized suffix tree construction algorithm on distributed data-Parallel platforms. DGST supports indexing all suffixes for a variety of string, ranging from a single long string to multiple string of varied lengths. In addition, DGST is built on the widely-used distributed data-parallel computing Apache Spark.
 
-#Prerequisites
+# News
+
+DGST won the first place in [the 3rd National University Cloud Computing Application Innovation Competition Big Data Skills Challenge](https://cloud.seu.edu.cn/series/) held in 2017, China.
+
+# Prerequisites
 
 - **Apache Spark:** As DGST is built on top of Spark, you need to get the Spark installed first. If you are not clear how to setup Spark, please refer to the guidelines [here](http://spark.apache.org/docs/latest/). Currently, DGST is developed on the APIs of Spark 1.6.3 version.
 - **Apache HDFS:** DGST uses HDFS as the distributed file system. If you are not clear how to setup HDFS, please refer to the guidelines [here](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HdfsUserGuide.html). The HDFS version is 2.6.5. 
@@ -34,25 +38,24 @@ Run DGST with the following command:
     <Input path> <Output path> <Temporary path> \
     <Range size> <Maximum sub-tree size> <Parallelism>
 
-The run command contains the following arguments:
+The run command contains the following parameters:
 
 - `<Input path>`: The input data path on HDFS or local file system.
 - `<Output path>`: The output data path on HDFS or local file system.
 - `<Temporary path>`: The tempoaray data path on HDFS or local file system.
 - `<Range size>`: The size of *range* in the LCP-Range structure
 - `<Maximum sub-tree size>`: The Maximum sub-tree size (i.e., the maximum S-prefix frequency)
-- `<Range size>`: The size of *range* in the LCP-Range structure
 - `<Parallelism>`: The computation parallelism on Spark
 
-**Note:** `--driver-class-path` is the directory where the configuration file is. The arguments set in the run command have higher priority than those set in the configuration file. To find more information about the configuration file, please refer to the [Configuration Guide](https://github.com/PasaLab/DGST/wiki/DGST-Configuration).
+**Note:** `--driver-class-path` is the directory where the configuration file is. The parameters configured in the run command have higher priority than those in the configuration file. To find more information about the configuration file, please refer to the [Configuration Guide](https://github.com/PasaLab/DGST/wiki/DGST-Configuration).
 
 **Note:** We also port the [ERa](http://www.vldb.org/pvldb/vol5/p049_essammansour_vldb2012.pdf) algorithm to Spark. Please replace the main class with `GST.EraMain` to run the ERa algorithm.
 
 ## Demo
 
-The demo dataset which contais two strings can be found in `/demo` directory. Each file represents a string. 
+The dataset in `/demo` directory contais two strings. Each file represents a string. 
 
-Refer to the result generalized suffix tree [here](https://github.com/PasaLab/DGST/wiki/DGST-Demo).
+The generalized suffix tree for the two demo strings can be found [here](https://github.com/PasaLab/DGST/wiki/DGST-Demo).
 
 ## Licence
 
