@@ -49,11 +49,11 @@ The run command contains the following parameters:
 
 **Note:** `--driver-class-path` is the directory where the configuration file is. The parameters configured in the run command have higher priority than those in the configuration file. To find more information about the configuration file, please refer to the [Configuration Guide](https://github.com/PasaLab/DGST/wiki/DGST-Configuration).
 
-**Note:** We also port the [ERa](http://www.vldb.org/pvldb/vol5/p049_essammansour_vldb2012.pdf) algorithm to Spark. Please replace the main class with `GST.EraMain` to run the ERa algorithm.
+**Note:** We also port the state-of-the-art [ERa](http://www.vldb.org/pvldb/vol5/p049_essammansour_vldb2012.pdf) algorithm to Spark. Please replace the main class with `GST.EraMain` to run the ERa algorithm. The performance comparison on Spark is [here](https://github.com/PasaLab/DGST/wiki/Performance-Comparison-on-Spark).
 
 ## Demo
 
-The dataset in `/demo` directory contais two strings. Each file represents a string. 
+The dataset in `demo` directory contais two strings. Each file represents a string. 
 
 The generalized suffix tree for the two demo strings can be found [here](https://github.com/PasaLab/DGST/wiki/DGST-Demo).
 
