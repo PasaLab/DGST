@@ -4,7 +4,7 @@ DGST (**D**istributed **G**eneralized **S**uffix **T**ree) is an efficient and s
 
 # News
 
-DGST won the first place in [the 3rd National University Cloud Computing Application Innovation Competition Big Data Skills Challenge](https://cloud.seu.edu.cn/series/) held in 2016-2017, China.
+DGST won the first place in [the 3rd National University Cloud Computing Application Innovation Competition Big Data Skills Challenge](https://cloud.seu.edu.cn/contest_2016/) held in 2016-2017, China.
 
 # Prerequisites
 
