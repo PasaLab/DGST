@@ -1,6 +1,6 @@
 # DGST
 
-DGST (**D**istributed **G**eneralized **S**uffix **T**ree) is an efficient and scalable generalized suffix tree construction algorithm on distributed data-Parallel platforms. DGST supports indexing all suffixes for a variety of string, ranging from a single long string to multiple string of varied lengths. In addition, DGST is built on the widely-used distributed data-parallel computing Apache Spark.
+DGST (**D**istributed **G**eneralized **S**uffix **T**ree) is an efficient and scalable generalized suffix tree construction algorithm on distributed data-parallel platforms. DGST supports indexing all suffixes for a variety of strings, ranging from a single long string to multiple strings of varied lengths. In addition, DGST is built on the widely-used distributed data-parallel computing platform Apache Spark.
 
 # News
 
